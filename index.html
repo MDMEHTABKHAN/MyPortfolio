@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Mehtab Khan - Full Stack Developer</title>
+
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+     <!-- Meta Description -->
+     <meta name="description" content="Md Mehtab Khan is a skilled Full Stack Developer specializing in both front-end and back-end development. Explore his portfolio, skills, projects, and services. Contact him for professional web solutions.">
+     <meta name="keywords" content="Md Mehtab Khan, Full Stack Developer, Front-End Developer, Back-End Developer, Web Development, JavaScript, React, Node.js, Python, Git, Tailwind CSS, Bootstrap, Portfolio, Contact">
+     <meta name="author" content="Md Mehtab Khan">
+     <meta name="twitter:card" content="summary_large_image">
+     <meta name="twitter:title" content="Md Mehtab Khan - Full Stack Developer">
+     <meta name="twitter:description" content="Md Mehtab Khan is a skilled Full Stack Developer specializing in both front-end and back-end development. Explore his portfolio, skills, projects, and services. Contact him for professional web solutions.">
+    <meta name="twitter:image" content="assets/profile-pic.png">
+
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <nav class="bg-[#008080] text-white mehtab">
+        <div class="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between">
+    
+            <!-- Navbar Toggler -->
+            <button class="lg:hidden text-white focus:outline-none cursor-pointer" type="button" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="hidden lg:flex flex-grow justify-center space-x-8">
+                <a class="hover:text-gray-400 transition" href="#home">Home</a>
+                <a class="hover:text-gray-400 transition" href="#about">About</a>
+                <a class="hover:text-gray-400 transition" href="#services">Services</a>
+                <a class="hover:text-gray-400 transition" href="#skills">Skills</a>
+                <a class="hover:text-gray-400 transition" href="#education">Education</a>
+                <a class="hover:text-gray-400 transition" href="#projects">Projects</a>
+                <a class="hover:text-gray-400 transition" href="#contact">Contact</a>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 w-64 bg-gradient-to-r from-[#008080] to-[#20c997] text-white h-full lg:hidden">
+            <div class="flex justify-end p-4">
+                <button class="text-white text-2xl" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+            <ul class="flex flex-col items-center space-y-4 mt-8">
+                <li><a class="hover:text-gray-400 transition" href="#home">Home</a></li>
+                <li><a class="hover:text-gray-400 transition" href="#about">About</a></li>
+                <li><a class="hover:text-gray-400 transition" href="#services">Services</a></li>
+                <li><a class="hover:text-gray-400 transition" href="#skills">Skills</a></li>
+                <li><a class="hover:text-gray-400 transition" href="#education">Education</a></li>
+                <li><a class="hover:text-gray-400 transition" href="#projects">Projects</a></li>
+                <li><a class="hover:text-gray-400 transition" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex flex-col items-center justify-center min-h-screen bg-[#483d8b] text-center p-4 md:p-3 lg:p-12">
+        <img src="assets/profile-pic.png" alt="profile pic" class="rounded-full w-32 h-32 mt-0 mb-0 sm:mt-2 sm:mb-2 md:w-40 md:h-40 lg:w-48 lg:h-48 md:mt-4 md:mb-4">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-100">Hi, I'm Md Mehtab Khan</h1>
+        <p class="text-sm md:text-base mt-2 lg:text-lg text-gray-200 max-w-xl lg:max-w-2xl mx-auto text-justify">
+            As a full-stack developer, I seamlessly blend front-end finesse with back-end wizardry to create immersive digital experiences. I thrive on transforming complex challenges into elegant solutions, ensuring that every aspect of a project—from user interface to server-side logic—works harmoniously together. I drive my approach with a passion for innovation and a commitment to delivering high-quality results that surpass expectations.
+        </p>
+    
+        <!-- Buttons section with responsive design -->
+        <div class="mt-4 sm:mt-6 flex flex-wrap justify-center gap-4">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/mdmehtab/" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded text-sm md:text-base">
+                LinkedIn
+            </a>
+    
+            <!-- GitHub -->
+            <a href="https://github.com/mdmehtabkhan" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded text-sm md:text-base">
+                GitHub
+            </a>
+    
+            <!-- Work with Me -->
+            <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded text-sm md:text-base">
+                Work with Me
+            </a>
+    
+            <!-- Download CV -->
+            <a href="assets/Resume.pdf" download class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded text-sm md:text-base">
+                Download CV
+            </a>
+        </div>
+    </section>
+      
+    
+     <!-- About Me Section -->
+    <section id="about" class="p-4 bg-gray-100">
+        <div class="w-full mb-6">
+            <!-- About Heading -->
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800 text-center">About Me</h2>
+    
+            <!-- Image -->
+            <div class="w-full flex justify-center mb-6">
+                <img src="assets/profile-pic.png" alt="profile-pic" class="rounded-lg w-50 h-40">
+            </div>
+            
+            <!-- About Description -->
+            <p class="class="text-lg text-gray-700 text-center px-4 md:text-justify md:px-10 lg:px-20">
+               As a full-stack developer, I excel at creating responsive, performance-driven web applications. I ensure that both front-end and back-end systems work seamlessly together to deliver exceptional user experiences.
+            </p>
+        </div>
+    
+        <!-- Expertise Section (Skill Lines) -->
+        <div class="w-full">
+            <!-- Skill: Front end-->
+            <div class="mb-6">
+                <div class="flex justify-between items-center">
+                    <span class="text-lg font-semibold text-gray-800">Frontend-(ReactJs, Bootstrap, Tailwind)</span>
+                    <span class="text-lg font-semibold text-gray-800">90%</span>
+                </div>
+                <div class="w-full bg-gray-300 h-2 rounded-md mt-2">
+                    <div class="bg-purple-700 h-full" style="width: 90%; height: 10px;"></div>
+                </div>
+            </div>
+    
+            <!-- Skill: Backend -->
+            <div class="mb-6">
+                <div class="flex justify-between items-center">
+                    <span class="text-lg font-semibold text-gray-800">Backend-(Node.js)</span>
+                    <span class="text-lg font-semibold text-gray-800">80%</span>
+                </div>
+                <div class="w-full bg-gray-300 h-2 rounded-md mt-2">
+                    <div class="bg-pink-900 h-full" style="width: 80%; height: 10px;"></div>
+                </div>
+            </div>
+    
+            <!-- Skill: Git-->
+            <div class="mb-6">
+                <div class="flex justify-between items-center">
+                    <span class="text-lg font-semibold text-gray-800">Git</span>
+                    <span class="text-lg font-semibold text-gray-800">90%</span>
+                </div>
+                <div class="w-full bg-gray-300 h-2 rounded-md mt-2">
+                    <div class="bg-orange-400 h-full" style="width: 90%; height: 10px;"></div>
+                </div>
+            </div>
+    
+            <!-- Skill: Datbase -->
+            <div class="mb-6">
+                <div class="flex justify-between items-center">
+                    <span class="text-lg font-semibold text-gray-800">Database-(Sql)</span>
+                    <span class="text-lg font-semibold text-gray-800">85%</span>
+                </div>
+                <div class="w-full bg-gray-300 h-2 rounded-md mt-2">
+                    <div class="bg-gray-600 h-full" style="width: 85%; height: 10px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-10">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10">Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-blue-700 shadow-lg rounded-lg">
+                    <h3 class="text-4xl text-white font-semibold py-5">Web Design</h3>
+                    <p class="text-white"> Crafting stunning, responsive websites that captivate and adapt seamlessly to any device.</p>
+                </div>
+                <div class="p-6 bg-yellow-400 shadow-lg rounded-lg">
+                    <h3 class="text-4xl font-semibold py-5">Web Development</h3>
+                    <p class="text-gray-700">Transforming concepts into digital wonders through code, where vision becomes reality</p>
+                </div>
+                <div class="p-6 bg-[#aa3b3b] shadow-lg rounded-lg">
+                    <h3 class="text-xl text-white font-semibold py-5">Software Engineer</h3>
+                    <p class="text-white">Crafting efficient software solutions with strong coding skills, problem-solving, and collaborative teamwork.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skill section -->
+    <section id="skills" class="bg-gray-200 py-10">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <!-- Heading aligned to the left -->
+            <h2 class="text-3xl font-bold mb-6 text-left">Skills</h2>
+            
+            <!-- Grid for skills, 4 columns on larger screens, stack into rows on smaller screens -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 ml-20">
+                <!-- Column 1 -->
+                <div class="flex flex-col items-start">
+                    <span class="text-lg text-gray-700">HTML</span>
+                    <span class="text-lg text-gray-700">CSS</span>
+                    <span class="text-lg text-gray-700">JavaScript</span>
+                </div>
+                <!-- Column 2 -->
+                <div class="flex flex-col items-start">
+                    <span class="text-lg text-gray-700">Bootstrap</span>
+                    <span class="text-lg text-gray-700">Tailwind</span>
+                    <span class="text-lg text-gray-700">JQuery</span>
+                </div>
+                <!-- Column 3 -->
+                <div class="flex flex-col items-start">
+                    <span class="text-lg text-gray-700">Git</span>
+                    <span class="text-lg text-gray-700">Node.js</span>
+                    <span class="text-lg text-gray-700">ReactJs</span>
+                </div>
+                <!-- Column 4 -->
+                <div class="flex flex-col items-start">
+                    
+                    <span class="text-lg text-gray-700">Python</span>
+                    <span class="text-lg text-gray-700">Java</span>
+                    <span class="text-lg text-gray-700">MySQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-200">
+        <div class="max-w-screen-xl mx-auto px-4 ">
+            <h2 class="text-3xl font-bold mb-10">Education</h2>
+    
+            <!-- Cards container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    
+                <!-- Bachelor of Technology Card -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Bachelor of Technology in Computer Science and Engineering</h3>
+                    <p class="text-lg text-gray-700">Siddhartha Institute of Engineering and Technology, JNTU, Hyderabad</p>
+                </div>
+    
+                <!-- Intermediate in PCM Card -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Intermediate in PCM (Physics, Chemistry, Mathematics)</h3>
+                    <p class="text-lg text-gray-700">Madhupur College, Madhupur, Jharkhand</p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-300">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10">Projects</h2>
+            <!-- Projects container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+    
+                <!-- Crime Data Analysis Project -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Crime Data Analysis (Skills: Machine Learning, Python Programming, Data Analysis, Data Visualization)</h3>
+                    <p class="text-xl text-gray-700 mb-4">
+                        This project leverages machine learning to analyze crime data and uncover patterns in criminal activities.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        Utilizing Python, various classification algorithms such as Decision Tree and Naive Bayes were applied.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        The analysis focused on identifying crime hotspots and trends based on a decade-long dataset from San Francisco.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        The project provides actionable insights to improve law enforcement strategies and resource allocation.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        Results include visualizations of crime patterns to aid in understanding and prevention efforts.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        The project highlights the effectiveness of different ML models for crime prediction and classification.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        It supports data-driven decision-making in law enforcement and enhances public safety initiatives.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        Overall, it contributes to smarter policing and better crime prevention through advanced analytics.
+                    </p>
+                </div>
+    
+                <!-- Privacy-Preserving Public Auditing for Shared Cloud Data Project -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Privacy-Preserving Public Auditing for Shared Cloud Data with Secure Group Management (Skills: Java, J2EE, MySQL, Data Security, Cloud Computing)</h3>
+                    <p class="text-xl text-gray-700 mb-4">
+                        This project enables public auditing of cloud data while maintaining data privacy through secure methods.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        Developed using Java and J2EE, it allows third-party auditors to verify the integrity of shared cloud data without accessing its content.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        It incorporates secure group management, ensuring that group members can modify data while preserving its confidentiality.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        The system is designed for efficient and secure cloud data sharing among multiple users.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        It supports scalable cloud storage solutions with robust data protection mechanisms.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        The project addresses key challenges in cloud computing related to data privacy and integrity.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        It provides a practical solution for maintaining data security in shared environments.
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4">
+                        Overall, it enhances trust and reliability in cloud data management through innovative security measures.
+                    </p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+     <section id="contact">
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="97462f41-d725-4955-bbad-aef2d373bdce">
+            <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <input type="subject" name="subject" placeholder="Subject" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="assets/arrow_icon.png" alt="icon-image"> </button>
+        </form>
+    </div>
+</section>
+    
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-screen-xl mx-auto px-4 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h5 class="font-bold text-lg mb-2">Connect & Follow</h5>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://www.linkedin.com/in/mdmehtab/" class="text-gray-300 hover:text-white" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/mdmehtabkhan" class="text-gray-300 hover:text-white" target="_blank">
+                            <i class="fa-brands fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; 2024 Md Mehtab Khan. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
